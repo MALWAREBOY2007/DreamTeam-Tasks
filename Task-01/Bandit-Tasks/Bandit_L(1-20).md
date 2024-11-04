@@ -190,9 +190,9 @@ RESULT:**Shows data.txt file**
 
 COMMAND:**base64 -d data.txt**
 
-EXPLAINATION:**De encrypts the data.txt file**
+EXPLAINATION:**Decrypts the data.txt file**
 
-RESULT:**Password is obtained**
+RESULT:**dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr**
 
 # <u>LEVEL(11-12)</u>
 
@@ -206,4 +206,189 @@ RESULT:**Gur cnffjbeq vf 7k16JArUVv5LxVuJfsSVdbbtaHGlw9D4**
 
 COMMAND:**echo 'Gur cnffjbeq vf 7k16JArUVv5LxVuJfsSVdbbtaHGlw9D4' | tr 'A-Za-z' 'N-ZA-Mn-za-m'**
 
-RESULT:**Shows the password**
+RESULT:**7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4**
+
+# <u>LEVEL(12-13)</u>
+
+COMMAND:**ls**
+
+OUTPUT:**shows data.txt file**
+
+COMMAND:**mkdir /tmp/bios**
+
+OUTPUT: **a new directory created under /tmp directory**
+
+COMMAND:**cp data.txt /tmp/bios**
+
+OUTPUT:**copies data.txt file into the new directory**
+
+COMMAND:**cd /tmp/bios**
+
+OUTPUT:**shifted to the directory /tmp/bios**
+
+COMMAND:**ls**
+
+OUTPUT:**data.txt**
+
+COMMAND:**xxd -r data.txt > data**
+
+OUTPUT:**decompresses the hexdump file by option -r and normally creates a hexdump file**
+
+COMMAND:**ls**
+
+OUTPUT:**shows the files**
+
+COMMAND:**file data**
+
+OUTPUT:**tells the type of data**
+
+COMMAND:**mv data file.gz**
+
+OUTPUT:**renames the file into .gz format**
+
+COMMAND:**gzip -d file.gz**
+
+OUTPUT:**for decompressing**
+
+COMMAND:**file file**
+
+OUTPUT:**tells the type of the file**
+
+COMMAND:**mv file file.bz2**
+
+OUTPUT:**renames the file**
+
+COMMAND:**bzip2 -d file.bz**
+
+OUTPUT:**compresses the file**
+
+COMMAND:**ls**
+
+COMMAND:**mv file file.tar**
+
+OUTPUT:**renames the file**
+
+COMMAND:**tar xf file.tar**
+
+OUTPUT:**to extract a tar archive**
+
+COMMAND:**ls**
+
+COMMAND:**file data5.bin**
+
+OUTPUT:**tells the type of file**
+
+COMMAND:**rm file.tar**
+
+OUTPUT:**removes the file**
+
+COMMAND:**rm data.txt**
+
+OUTPUT:**removes the file**
+
+COMMAND:**mv data5.bin data.tar**
+
+OUTPUT:**renames the file**
+
+COMMAND:**tar xf data.tar**
+
+OUTPUT:**extract the tar archive file**
+
+COMMAND:**ls**
+
+COMMAND:**file datat6.bin**
+
+OUTPUT:**tells the type of file**
+
+COMMAND:**mv data6.bin data.bz2**
+
+OUTPUT:**renames the file**
+
+COMMAND:**bzip2 -d data.bz2**
+
+COMMAND:**mv data data.tar**
+
+OUTPUT:**renames the file**
+
+COMMAND:**tar xf data.tar**
+
+COMMAND:**file data8.bin**
+
+OUTPUT:**tells the type of the file**
+
+COMMAND:**mv data8.bin data.gz**
+
+OUTPUT:**renames the file**
+
+COMMAND:**gzip -d data.gz**
+
+COMMAND:**file data**
+
+OUTPUT:**tells the type of data file**
+
+COMMAND:**cat data**
+
+OUTPUT:**shows password**
+
+# **<u>LEVEL(13-14)</u>**
+
+COMMAND:**ls**
+
+OUTPUT:**sshkey.private**
+
+COMMAND(2):**ssh -p 2220 -l bandit14 -i sshkey.private bandit.labs.overthewire.org**
+
+OUTPUT(2):**goes to bandit level14**
+
+# **<u>LEVEL(14-15)</u>**
+
+COMMAND(1):**cat /etc/bandit_pass/bandit14**
+
+OUTPUT(1):**gives the password that is to be submitted to the localhost**
+
+COMMAND:**nc localhost 30000**
+
+OUTPUT:**submit the above password to the localhost 30000 port and it will give us the new password.**
+
+# **<u>LEVEL(15-16)</u>**
+
+COMMAND:**cat /etc/bandit_pass/bandit15**
+
+OUTPUT:**gives the password the previous level's password**
+
+COMMAND:**ncat --ssl localhost 30001**
+
+OUTPUT:**gives the final password**
+
+# **<u>LEVEL(16-17)</u>**
+
+COMMAND:**cat /etc/bandit_pass/bandit16**
+
+OUTPUT:**gives the password that is to be submitted in local host**
+
+COMMAND:**nmap localhost -p 31000-32000**
+
+OUTPUT:**gives the port numbers which have server in them**
+
+PORT STATE SERVICE
+31046/tcp open unknown
+31518/tcp open unknown
+31691/tcp open unknown
+31790/tcp open unknown
+31960/tcp open unknown
+
+COMMAND:**ncat --ssl localhost 31406**
+
+OUTPUT:**just checking if this the right port.but it is not :(**
+
+COMMAND:**ncat --ssl localhost 31518**
+
+OUTPUT:**just checking if this the right port.but it is not :(**
+
+COMMAND:**ncat --ssl localhost 31691**
+
+OUTPUT:**just checking if this the right port.but it is not :(**
+
+COMMAND:**ncat --ssl localhost 31790**
+
+OUTPUT:**gives the key to the next to level**
