@@ -12,171 +12,171 @@ Password:
 bandit0
 ```
 
-# **<u>LEVEL1</u>**
+# **<u>LEVEL(0-1)</u>**
 
-COMMAND(1): **ls**
+COMMAND: **ls**
 
-RESULT(1):**shows readme file**
+RESULT:**shows readme file**
 
-COMMAND(2):**cat readme**
+COMMAND:**cat readme**
 
-RESULT(2):**shows the password in the file**
+RESULT:**shows the password in the file**
 
 PASSWORD:**ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If**
 
-# **<u>LEVEL2</u>**
+# **<u>LEVEL(1-2)</u>**
 
-COMMAND(1):**ls**
+COMMAND:**ls**
 
-RESULT(1):**shows - file**
+RESULT:**shows - file**
 
-COMMAND(2):**cat  ./-**
+COMMAND:**cat  ./-**
 
-RESULT(2):**shows the password in the file**
+RESULT:**shows the password in the file**
 
 PASSWORD:**263JGJPfgU6LtdEvgfWU1XP5yac29mFx**
 
-# **<u>LEVEL3</u>**
+# **<u>LEVEL(2-3)</u>**
 
-COMMAND(1):**ls**
+COMMAND:**ls**
 
-RESULT(1):**shows (spaces in this filename) file**
+RESULT:**shows (spaces in this filename) file**
 
-COMMAND(2):**cat spaces\ in\ this\ filename**
+COMMAND:**cat spaces\ in\ this\ filename**
 
-RESULT(2):**shows the password**
+RESULT:**shows the password**
 
 PASSWORD:**MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx**
 
-# **<u>LEVEL4</u>**
+# **<u>LEVEL(3-4)</u>**
 
-COMMAND(1):**ls**
+COMMAND:**ls**
 
-RESULT(1):**shows (inhere) directory**
+RESULT:**shows (inhere) directory**
 
-COMMAND(2):**cd inhere**
+COMMAND:**cd inhere**
 
-RESULT(2):**goes to (inhere) directory**
+RESULT:**goes to (inhere) directory**
 
-COMMAND(3):**ls -a**
+COMMAND:**ls -a**
 
-RESULT(3):**.    .  .   .  .  .Hiding-From-You**
+RESULT:**.    .  .   .  .  .Hiding-From-You**
 
-COMMAND(4):**cat   . . .Hiding-From-You**
+COMMAND:**cat   . . .Hiding-From-You**
 
-RESULT(4)**:shows the password**
+RESULT**:shows the password**
 
 PASSWORD:**2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ**
 
-# **<u>LEVEL5</u>**
+# **<u>LEVEL(4-5)</u>**
 
-COMMAND(1):**ls**
+COMMAND:**ls**
 
-RESULT(1):**shows (inhere) directory**
+RESULT:**shows (inhere) directory**
 
-COMMAND(2):**cd inhere**
+COMMAND:**cd inhere**
 
-RESULT(2):**goes to (inhere) directory**
+RESULT:**goes to (inhere) directory**
 
-COMMAND(3):**ls**
+COMMAND:**ls**
 
-RESULT(3):**shows files from file00 to file09**
+RESULT:**shows files from file00 to file09**
 
-COMMAND(4):**cat ./-file00  ./-file01  ./-file02  ./-file03  ./-file04  ./-file05  ./-file06  ./-    file07  ./-file08  ./-file09**
+COMMAND:**type ./-file00**
 
-RESULT(4):**shows only 1 humanreadable password**
+RESULT:**Shows the type of the file.If it is ASCII text.Then we got the right password.Check it for every file.**
 
 PASSWORD:**4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw**
 
-# **<u>LEVEL6</u>**
+# **<u>LEVEL(5-6)</u>**
 
-COMMAND(1):**ls**
+COMMAND:**ls**
 
-RESULT(1):**shows (inhere) directory**
+RESULT:**shows (inhere) directory**
 
-COMMAND(2):**cd inhere**
+COMMAND:**cd inhere**
 
-RESULT(2):**shows directories from 00 to 19**
+RESULT:**shows directories from 00 to 19**
 
-COMMAND(3):**find -readble  -size 1033cc !  -executable**
+COMMAND:**find -readable  -size 1033c !  -executable**
 
-RESULT(3):**./maybehere07/. file2**
+RESULT:**./maybehere07/. file2**
 
-COMMAND(4):**cd maybehere07**
+COMMAND:**cd maybehere07**
 
-RESULT(4):**goes to directory maybehere07**
+RESULT:**goes to directory maybehere07**
 
-COMMAND(5):**cat .file2**
+COMMAND:**cat .file2**
 
-RESULT(5):**shows  the password**
+RESULT:**shows  the password**
 
 PASSWORD:**HWasnPhtq9AVKe0dmk45nxy20cvUa6EG**
 
-# **<u>LEVEL7</u>**
+# **<u>LEVEL(6-7)</u>**
 
-COMMAND(1):****find / -user bandit7 -group bandit6  -size 33c**
+COMMAND:****find / -user bandit7 -group bandit6  -size 33c**
 
-RESULT(1):**shows all the files only one is given permission other files are permission denied**
+RESULT:**shows all the files only one is given permission other files are permission denied**
 
 EXPLAINATION:**we will copy the file which was given permission  that is /var/lib/dpkg/info/bandit7.password**
 
-COMMAND(2):**cat  /var/lib/dpkg/info/bandit7.password**
+COMMAND:**cat  /var/lib/dpkg/info/bandit7.password**
 
-RESULT(2):**shows the password**
+RESULT:**shows the password**
 
 PASSWORD:**morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj**
 
-# **<u>LEVEL8</u>**
+# **<u>LEVEL(7-8)</u>**
 
-COMMAND(1):**ls**
+COMMAND:**ls**
 
-RESULT(1):**shows data.txt file**
+RESULT:**shows data.txt file**
 
-COMMAND(2):**cat data.txt**
+COMMAND:**cat data.txt**
 
-RESULT(2):**shows contents in data.txt file**
+RESULT:**shows contents in data.txt file**
 
-COMMAND(3):**less data.txt**
+COMMAND:**less data.txt**
 
-RESULT(3):**shows some contents in data.txt file**
+RESULT:**shows some contents in data.txt file**
 
-COMMAND(4):**/millionth**
+COMMAND:**/millionth**
 
-RESULT(4):**finds out where the word millionth is in file and password is beside it**
+RESULT:**finds out where the word millionth is in file and password is beside it**
 
 PASSWORD:**dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc**
 
-# **<u>LEVEL9</u>**
+# **<u>LEVEL(8-9)</u>**
 
-COMMAND(1):**ls**
+COMMAND:**ls**
 
-RESULT(1):**shows data.txt file**
+RESULT:**shows data.txt file**
 
-COMMAND(2)**cat data.txt**
+COMMAND:**cat data.txt**
 
-RESULT(2):**shows content in data.txt**
+RESULT:**shows content in data.txt**
 
-COMMAND(3):**sort data.txt | uniq -u**
+COMMAND:**sort data.txt | uniq -u**
 
 EXPLAINATION:**it picks only uniques lines in the file**
 
-RESULT(3):**shows the password**
+RESULT:**shows the password**
 
 PASSWORD:**4CKMh1JI91bUIZZPXDqGanal4xvAg0JM**
 
-# **<u>LEVEL10</u>**
+# **<u>LEVEL(9-10)</u>**
 
-COMMAND(1):**ls**
+COMMAND:**ls**
 
-RESULT(1):**shows data.txt file**
+RESULT:**shows data.txt file**
 
-COMMAND(2):**cat data.txt **
+COMMAND:**cat data.txt **
 
-RESULT(2):**shows contents in data.txt file**
+RESULT:**shows contents in data.txt file**
 
-COMMAND(3):**grep  -o ==== data.txt**
+COMMAND:**grep  -o ==== data.txt**
 
-RESULT(3):**grep: data.txt:binary file matches**
+RESULT:**grep  data.txt:binary file matches**
 
 EXPLAINATION:**after sequence of ==== human readable password is present**
 
