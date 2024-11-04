@@ -328,11 +328,11 @@ OUTPUT:**tells the type of data file**
 
 COMMAND:**cat data**
 
-OUTPUT:**shows password**
+OUTPUT:**FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn**
 
 # **<u>LEVEL(13-14)</u>**
 
-COMMAND:**ls**
+COMMAND:**ls** 
 
 OUTPUT:**sshkey.private**
 
@@ -348,7 +348,7 @@ OUTPUT(1):**gives the password that is to be submitted to the localhost**
 
 COMMAND:**nc localhost 30000**
 
-OUTPUT:**submit the above password to the localhost 30000 port and it will give us the new password.**
+OUTPUT:**8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo**
 
 # **<u>LEVEL(15-16)</u>**
 
@@ -391,4 +391,6 @@ OUTPUT:**just checking if this the right port.but it is not :(**
 
 COMMAND:**ncat --ssl localhost 31790**
 
-OUTPUT:**gives the key to the next to level**
+OUTPUT:**kSkvUpMQ7lBYyCM4GBPvCvT1BfWRy0Dx**
+
+# <u>LEVEL(17-18)</u>
