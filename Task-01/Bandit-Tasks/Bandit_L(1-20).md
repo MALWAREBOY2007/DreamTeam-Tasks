@@ -181,3 +181,29 @@ RESULT:**grep  data.txt:binary file matches**
 EXPLAINATION:**after sequence of ==== human readable password is present**
 
 PASSWORD:**FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey**
+
+# <u>LEVEL(10-11)</u>
+
+COMMAND:**ls**
+
+RESULT:**Shows data.txt file**
+
+COMMAND:**base64 -d data.txt**
+
+EXPLAINATION:**De encrypts the data.txt file**
+
+RESULT:**Password is obtained**
+
+# <u>LEVEL(11-12)</u>
+
+COMMAND:**ls**
+
+RESULT:**Shows the data.txt file**
+
+COMMAND:**cat data.txt**
+
+RESULT:**Gur cnffjbeq vf 7k16JArUVv5LxVuJfsSVdbbtaHGlw9D4**
+
+COMMAND:**echo 'Gur cnffjbeq vf 7k16JArUVv5LxVuJfsSVdbbtaHGlw9D4' | tr 'A-Za-z' 'N-ZA-Mn-za-m'**
+
+RESULT:**Shows the password**
